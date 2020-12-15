@@ -5,6 +5,7 @@ import Home from '../pages/Home'
 import Register from '../pages/Register'
 import Login from '../pages/Login'
 import Profile from '../pages/Profile'
+import ShowPost from "../pages/ShowPost"
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
     const currentUser = localStorage.getItem('id')
@@ -18,6 +19,7 @@ const Routes = (props) => (
     <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/register' component={Register} />
+        <Route path='/showpost' component={ShowPost} />
         <Route path='/login' render={(routeComponentProps) => {
             return <Login
                 {...routeComponentProps}

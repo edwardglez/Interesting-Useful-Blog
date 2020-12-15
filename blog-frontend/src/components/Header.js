@@ -13,6 +13,7 @@ const Header = (props) => {
                     {props.currentUser ?
                         <>
                             <li><Link to={'/profile'}>Profile</Link></li>
+                            <li><Link to={'/showpost'}>Post</Link></li>
                             <li><a href="/logout" onClick={props.logout}>Log Out</a></li>
                         </>
                         :

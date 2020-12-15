@@ -1,9 +1,16 @@
 import React from 'react';
+import NewPost from './NewPost'
 
-const Profile = props => {
+const Profile = (props) => {
+
     return (
-        <h1>Profile of user with ID { props.currentUser}</h1>
+        <div>
+            <h1>{props.currentUser}'s Blog</h1>
+            <NewPost currentUser={props.currentUser} />
+        </div>
     )
 }
 
 export default Profile
+
+
