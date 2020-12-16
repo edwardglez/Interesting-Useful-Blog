@@ -37,11 +37,11 @@ const createPost = (req, res) => {
     // res.redirect('/showpost')
 }
 
-// To update the watching status.
+// To update the blog post.
 // Update
 // PUT can access body or params
 const editPost = (req, res) => {
-    db.user.findByPk(req.user.id).then(() => {
+    // db.user.findByPk(req.user.id).then(() => {
         db.posts.update(req.body.postId, {
             where: {
                 postId: req.body.postId,
@@ -51,16 +51,16 @@ const editPost = (req, res) => {
         }).then((editPosts) => {
             res.json({ editPosts, message: `Post has been updated.` })
         }).catch(err => console.log("Error at update", err))
-    })
+    // })
 }
 
 // to delete a post
 // Delete
 const deletePost = (req, res) => {
-    db.post.findOne({
+    db.posts.findOne({
         where: {
-            userId: req.body.userId,
-            postId: req.body.postId
+            // userId: req.body.userId,
+            id: req.params.id
         }
     }).then((foundPost) => {
         foundPost.destroy().then(() => res.sendStatus(200))

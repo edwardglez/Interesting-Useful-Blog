@@ -7,7 +7,7 @@ const ctrl = require('../controllers');
 router.get('/', ctrl.posts.posts)
 router.post('/', ctrl.posts.createPost)
 router.put('/:userId/:postId', ctrl.posts.editPost)
-router.delete('/:userId/:postId', ctrl.posts.deletePost)
+router.delete('/:userId/:id', ctrl.posts.deletePost)
 
 // exports
 module.exports = router;
