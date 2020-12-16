@@ -31,7 +31,7 @@ function NewPost(props) {
                     </div>
                     <div className="input-field col">
                         <label for="firsts">Entry:</label><br />
-                        <textarea id="blog_entry" type="text" className="validate" name="body" value={body} onChange={e => setBody(e.target.value)}/>
+                        <textarea rows="5" cols="50" id="blog_entry" type="text" className="validate" name="body" value={body} onChange={e => setBody(e.target.value)}/>
                     </div>
                     <button onClick={handleSubmit}>Create Post</button>
                 </form>

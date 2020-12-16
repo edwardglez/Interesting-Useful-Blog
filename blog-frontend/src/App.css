@@ -33,3 +33,8 @@ ul {
   border-radius: 2.25rem;
   margin: 5px;
 }
+
+a {
+  color: #fff;
+  transition: color 0.3s ease;
+}

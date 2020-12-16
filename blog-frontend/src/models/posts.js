@@ -23,12 +23,21 @@ export default class posts {
         }
         )
     }
-    static update = (postId) => {
-        return fetch(`${url}/posts/${postId}`).then(res => res.json())
+    static update = (id) => {
+        return fetch(`${url}/posts/${id}`).then(res => res.json())
     }
 
-    static delete = (postId) => {
-        return fetch(`${url}/posts/${postId}`).then(res => res.json())
+    static delete = (id) => {
+        const userId = localStorage.getItem('id')
+        console.log(userId)
+        return fetch(`${url}/posts/${userId}/${id}`, {
+            method: "DELETE",
+        }
+        ).then(res => {
+            console.log(res.status)
+            return res.status
+        })
+        .catch(console.error)
     }
 }
 

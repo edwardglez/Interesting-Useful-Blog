@@ -16,9 +16,22 @@ const ShowPost = () => {
     }
 
     useEffect(() => {
-        console.log('hit useeffect')
+        console.log('hit useEffect')
         getPost()
     }, [])
+
+    const handleUpdate = (id) => {
+        console.log(id)
+    }
+
+    const handleDestroy = (id) => {
+        console.log(id)
+        posts.delete(id)
+            .then(data => {
+                console.log(data)
+                getPost()
+            })
+    }
 
     return (
         <div>
@@ -34,7 +47,7 @@ const ShowPost = () => {
                                     {post.body}
                                 </Card.Text>
                                 <Button variant="primary">Edit</Button>
-                                <Button variant="primary">Delete</Button>
+                                <Button variant="primary" onClick={()=> handleDestroy(post.id)}>Delete</Button>
                             </Card.Body>
                         </Card>
                     </div>
