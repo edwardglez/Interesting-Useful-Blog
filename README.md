@@ -2,9 +2,13 @@
 
 ### Introduction
 Interesting Useful Blog is a PERN stack application thay will allow you to blog about your wildest dreams!
+
 ---
 ### Motivation
- TBD
+During these past weeks I've felt like I wasn't good enough or I wasn't retaining any information from what we have learned.
+I decided to create a blog for my final project. The main motivation behind this blog is because I challenge myself to build a fullstack app on my own. 
+I wanted to build an app where I can shared some of my experiences whether good or bad.  
+ 
 ---
 ### User Stories 
 As a user, I'd like to be able to create a profile.
@@ -54,4 +58,7 @@ HTML, CSS, PostgresQL, Nodejs, Express, Sequelize, PostgresQL, Reactjs, Passport
  
 ---
 ## Future Developments
-
+There are so many features that I'd like to implement in the future.
+The 2 main developments I want to add are the ability to add photos and comments within a post. 
+At the moment the post are just cards and I would like to be able click on the card and open a show pag.
+In my wireframes I do have a layout of how I'd like to set up those features.
