@@ -18,26 +18,30 @@ As a user, I want to be able to edit/delete my post.
 
 As a user, I want my posts to display all my post page.
 
+---
 ### Stretch Goals
 
 As a user, I want other users to be able to comment on my blog post.
 
 As a user I would like to be able to post images within my blog post.
 
+---
 ### Entity Relational Diagram:
 ### ![IUB - Final Project](https://user-images.githubusercontent.com/71733757/102519824-d9734d00-4047-11eb-93ac-c277585256b6.png)
 
 
+---
 ## Technologies & Code Snippets
 #### * Figma (for initial wireframing), HTML, CSS, JavaScript, Node.JS, Express, Sequelize, PostgresQL, EJS-layouts, Passport, Session, Flash, Method-Override
 #### * Sample code:
 #### 
 
 
+---
 ## Credits
 #### Our teammates, our General Assembly instructors, TAs, and class mates were very helpful, as well as numerous MDN and W3Schools articles for understanding CRUD. 
 
----
 
+---
 ## Future development
 #### Additions to come will be integrated image uploader capability, image carousel functionality so user can have iamge albums on posts, error logs to post for improved user experience.
