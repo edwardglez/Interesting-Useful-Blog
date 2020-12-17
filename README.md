@@ -31,16 +31,18 @@ As a user I would like to be able to post images within my blog post.
 
 ---
 ## Technologies
-#### * Figma (for initial wireframing), HTML, CSS, JavaScript, Node.JS, Express, Sequelize, PostgresQL, EJS-layouts, Passport, Session, Flash, Method-Override
+Figma (for initial wireframing), HTML, CSS, JavaScript, Node.JS, Express, Sequelize, PostgresQL, EJS-layouts, Passport, Session, Flash, Method-Override
 
 ## Code Snippets
-#### * Sample code:
+Sample code:
 
 
 
 ---
 ## Credits
-#### Our teammates, our General Assembly instructors, TAs, and class mates were very helpful, as well as numerous MDN and W3Schools articles for understanding CRUD. 
+ GA Instructors (Brock, James, Michael) and TAs (Jacob, Uyen, David, Weston)!
+ SEIR 921 classmates! 
+ Thank you for an excellent experience!
 
 
 ---
