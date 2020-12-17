@@ -58,6 +58,7 @@ HTML, CSS, PostgresQL, Nodejs, Express, Sequelize, PostgresQL, Reactjs, Passport
 ---
 ## Future Developments
 There are so many features that I'd like to implement in the future.
-The 2 main developments I want to add are the ability to add photos and comments within a post. 
+The main developments I want to add are the ability to add photos and comments within a post. 
 At the moment the post are just cards and I would like to be able click on the card and open a show pag.
 In my wireframes I do have a layout of how I'd like to set up those features.
+# Restyling the app is also something I will be doing in the future.
