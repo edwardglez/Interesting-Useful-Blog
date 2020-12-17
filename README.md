@@ -31,7 +31,7 @@ As a user I would like to be able to post images within my blog post.
 
 ---
 ## Technologies
-Figma (for initial wireframing), HTML, CSS, JavaScript, Node.JS, Express, Sequelize, PostgresQL, EJS-layouts, Passport, Session, Flash, Method-Override
+HTML, CSS, PostgresQL, Nodejs, Express, Sequelize, PostgresQL, Reactjs, Passport, React Bootstrap
 
 ## Code Snippets
 Sample code:
@@ -47,4 +47,4 @@ Sample code:
 
 ---
 ## Future development
-#### Additions to come will be integrated image uploader capability, image carousel functionality so user can have iamge albums on posts, error logs to post for improved user experience.
+
