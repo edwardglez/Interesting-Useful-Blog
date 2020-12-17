@@ -9,7 +9,7 @@ const posts = (req, res) => {
     db.posts.findAll({
         // find all by the userId
         where: {
-            userId: req.user.id,
+            userId: req.user.id
         }
     }).then((data) => {
         // Then take all that is found under the "data" and move it into a json to push to the frontend
@@ -33,6 +33,7 @@ const createPost = (req, res) => {
         }).then((newPosts) => {
             res.json({ newPosts, message: `New Post Created` })
         }).catch(err => console.log("Error at creation", err))
+        
     // })
     // res.redirect('/showpost')
 }
@@ -41,12 +42,13 @@ const createPost = (req, res) => {
 // Update
 // PUT can access body or params
 const editPost = (req, res) => {
+    console.log(req.body)
     // db.user.findByPk(req.user.id).then(() => {
-        db.posts.update(req.body.postId, {
+        db.posts.update(req.body, {
             where: {
-                postId: req.body.postId,
-                body: req.body.body,
-                title: req.body.title
+                id: req.body.id,
+                // body: req.body.body,
+                // title: req.body.title
             }
         }).then((editPosts) => {
             res.json({ editPosts, message: `Post has been updated.` })
