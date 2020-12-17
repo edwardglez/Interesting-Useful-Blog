@@ -26,8 +26,12 @@ As a user I would like to be able to post images within my blog post.
 ![(untitled)](https://user-images.githubusercontent.com/71733757/102521113-5fdc5e80-4049-11eb-9467-ef926c0a883d.png)
 
 ---
-## Technologies
+## Technologies:
 HTML, CSS, PostgresQL, Nodejs, Express, Sequelize, PostgresQL, Reactjs, Passport, React Bootstrap
+
+---
+## Screenshots:
+
 
 ---
 ## Code Snippets:
