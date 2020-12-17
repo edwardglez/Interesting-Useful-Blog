@@ -34,7 +34,10 @@ As a user I would like to be able to post images within my blog post.
 HTML, CSS, PostgresQL, Nodejs, Express, Sequelize, PostgresQL, Reactjs, Passport, React Bootstrap
 
 ## Code Snippets:
+# Frontend models/posts.js
 ![Screen Shot 2020-12-17 at 9 39 49 AM](https://user-images.githubusercontent.com/71733757/102523138-032e7300-404c-11eb-8999-5f8208e9df42.png)
+
+# Backend controllers/posts.js
 
 ---
 ## Credits
