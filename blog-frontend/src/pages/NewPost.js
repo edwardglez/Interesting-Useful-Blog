@@ -21,24 +21,24 @@ function NewPost(props) {
     }
     return (
         <div>
-            <section className="profile-section">
+            {/* <section className="profile-section"> */}
                 <div className="profile-card">
                     <h4> {props.currentUser}'s post </h4>
                 </div>
-            </section>
-            <section className="profile-section" >
-                <form className="col login-form" method="POST" action="/posts">
-                    <div className="input-field-title col">
-                        <label for="title">Title: </label><br />
+            {/* </section>
+            <section className="profile-section" > */}
+                <form className="edit-post-form" method="POST" action="/posts">
+                    <div className="edit-title">
+                        <label className="edit-title-label" for="title">Title: </label><br />
                         <input id="new_post" type="text" className="validate" name="title" value={title} onChange={e => setTitle(e.target.value)}/>
                     </div>
-                    <div className="input-field col">
-                        <label for="firsts">Entry:</label><br />
-                        <textarea rows="5" cols="50" id="blog_entry" type="text" className="validate" name="body" value={body} onChange={e => setBody(e.target.value)}/>
+                    <div className="edit-body">
+                        <label className="edit-body-label" for="firsts">Entry:</label><br />
+                        <textarea rows="7" cols="50" id="blog_entry" type="text" className="validate" name="body" value={body} onChange={e => setBody(e.target.value)}/>
                     </div>
                     <button className="create-post" onClick={handleSubmit}>Create Post</button>
                 </form>
-            </section>
+            {/* </section> */}
         </div>
     )
 }

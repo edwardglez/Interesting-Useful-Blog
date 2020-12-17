@@ -36,9 +36,9 @@ const Register = props => {
     return (
         <div>
             <h4>Register</h4>
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="name">Name</label>
+            <form className="reg-form" onSubmit={handleSubmit}>
+                <div className="form-group1">
+                    <label htmlFor="name">Name:</label>
                     <input
                         onChange={handleName}
                         value={name}
@@ -48,8 +48,8 @@ const Register = props => {
                         required
                     />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="name">Email</label>
+                <div className="form-group2">
+                    <label htmlFor="name">Email:</label>
                     <input
                         onChange={handleEmail}
                         value={email}
@@ -59,8 +59,8 @@ const Register = props => {
                         required
                     />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="name">Password</label>
+                <div className="form-group3">
+                    <label htmlFor="name">Password:</label>
                     <input
                         onChange={handlePassword}
                         value={password}
@@ -70,8 +70,8 @@ const Register = props => {
                         required
                     />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="confirm-password">Confirm Password</label>
+                <div className="form-group4">
+                    <label htmlFor="confirm-password">Confirm Password:</label>
                     <input
                         onChange={handleConfirmPassword}
                         value={confirmPassword}

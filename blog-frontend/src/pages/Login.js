@@ -37,8 +37,8 @@ const Login = props => {
     return (
         <div>
             <h4>Login</h4>
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
+            <form className="login-form" onSubmit={handleSubmit}>
+                <div className="form-group0">
                     <label htmlFor="name">Email</label>
                     <input
                         onChange={handleEmail}
