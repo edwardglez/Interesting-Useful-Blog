@@ -6,8 +6,7 @@ Interesting Useful Blog is a PERN stack application thay will allow you to blog 
 ---
 ### Motivation
 During these past weeks I've felt like I wasn't good enough or I wasn't retaining any information from what we have learned.
-I decided to create a blog for my final project. The main motivation behind this blog is because I wanted to challenge myself to build a fullstack app on my own.
-I wanted to build a very simple app where I can share some of my experiences, art or whatever is on my mind.
+I decided to create a blog for my final project. The motivation behind this blog is because I wanted to build a very simple app where I challenge myself to build a fullstack app on my own. I wanted my main focus on CRUD functionality as that's where I felt my confidence was lacking in. 
  
 ---
 ### User Stories 
