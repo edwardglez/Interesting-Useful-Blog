@@ -1,4 +1,4 @@
-# Blog_Final_Project
+# Interesting Useful Blog
 
 ### Introduction
 Interesting Useful Blog is a PERN stack application thay will allow you to blog about your wildest dreams!
