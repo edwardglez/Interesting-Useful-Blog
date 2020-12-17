@@ -25,7 +25,7 @@ As a user, I want other users to be able to comment on my blog post.
 As a user I would like to be able to post images within my blog post.
 
 ### Entity Relational Diagram:
-[IUB - Final Project.pdf](https://github.com/edwardglez/Blog_Final_Project/files/5711014/IUB.-.Final.Project.pdf)
+### [IUB - Final Project.pdf](https://github.com/edwardglez/Blog_Final_Project/files/5711014/IUB.-.Final.Project.pdf)
 
 
 ## Technologies & Code Snippets
