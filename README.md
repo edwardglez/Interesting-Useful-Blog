@@ -27,14 +27,16 @@ As a user I would like to be able to post images within my blog post.
 
 ---
 ### Entity Relational Diagram:
-### ![IUB - Final Project](https://user-images.githubusercontent.com/71733757/102519824-d9734d00-4047-11eb-93ac-c277585256b6.png)
+![IUB - Final Project](https://user-images.githubusercontent.com/71733757/102519824-d9734d00-4047-11eb-93ac-c277585256b6.png)
 
 
 ---
-## Technologies & Code Snippets
+## Technologies
 #### * Figma (for initial wireframing), HTML, CSS, JavaScript, Node.JS, Express, Sequelize, PostgresQL, EJS-layouts, Passport, Session, Flash, Method-Override
+
+## Code Snippets
 #### * Sample code:
-#### 
+
 
 
 ---
