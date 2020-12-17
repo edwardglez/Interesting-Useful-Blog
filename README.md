@@ -33,18 +33,15 @@ As a user I would like to be able to post images within my blog post.
 ## Technologies
 HTML, CSS, PostgresQL, Nodejs, Express, Sequelize, PostgresQL, Reactjs, Passport, React Bootstrap
 
-## Code Snippets
-Sample code:
-
-
+## Code Snippets:
+![Screen Shot 2020-12-17 at 9 39 49 AM](https://user-images.githubusercontent.com/71733757/102523138-032e7300-404c-11eb-8999-5f8208e9df42.png)
 
 ---
 ## Credits
  GA Instructors (Brock, James, Michael) and TAs (Jacob, Uyen, David, Weston)!
  SEIR 921 classmates! 
  Thank you for an excellent experience!
-
-
+ 
 ---
 ## Future development
 
