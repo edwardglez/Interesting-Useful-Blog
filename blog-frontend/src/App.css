@@ -4,6 +4,7 @@
 
 .Card {
   display: inline-flex;
+  width: 57rem;
 }
 
 ul {
@@ -15,6 +16,14 @@ ul {
 
 .btn-primary {
   margin: 1px;
+  background-color: crimson;
+  border-color: white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: crimson;
+  border-color: crimson;
 }
 
 .logo {
@@ -27,14 +36,73 @@ ul {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: black;
+  opacity: 0.9;
   background-clip: border-box;
   border: 1px solid crimson;
-  border-radius: 2.25rem;
+  border-radius: 0.25rem;
   margin: 5px;
 }
 
 a {
   color: #fff;
   transition: color 0.3s ease;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  color: white;
+}
+
+.create-post {
+  background-color: crimson;
+  border-color: white;
+  color: white;
+  padding: .375rem .75rem;
+  border: 1px solid white;
+  border-radius: .25rem;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.create-post:hover {
+  background-color: white;
+  color: crimson;
+  border-color: crimson;
+}
+
+.input-field {
+  margin-bottom: 25px;
+  margin-right: 35px;
+}
+
+.input-field-title {
+  margin-right: 160px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.col {
+  background-color: black;
+  opacity: 0.9;
+  width: 40%;
+  display: inline-table;
+  border: 2px solid crimson;
+  border-radius: .25rem;
+}
+
+label {
+  color: white;
+  margin-top: 14px;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+textarea {
+  margin-bottom: 15px;
 }

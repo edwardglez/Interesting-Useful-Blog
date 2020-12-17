@@ -1,6 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import posts from '../models/posts'
+import Button from "react-bootstrap/Button"
+import { useHistory } from 'react-router-dom'
 
-function Editpost(props ) {
+const Editpost = (props) => {
+    const [editPost, setEditPost] = useState(props.location.state)
+    // handle update. handle submit
+
+    // const handleUpdate = (id) => {
+    //     console.log(id)
+    //     posts.update(id)
+    //         .then(data => {
+    //             // console.log(data)
+    //             setEditPost()
+    //         })
+    // }
+
+    // useEffect(() => {
+    //     console.log(props)
+
+    // },[])
+
+    let history = useHistory()
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        // console.log(id)
+        posts.update(editPost)
+            .then(data => {
+                history.push('/showpost')
+            })
+    }
+
     return (
         <div>
             <section class="profile-section">
@@ -9,22 +40,16 @@ function Editpost(props ) {
                 </div>
             </section>
             <section class="profile-section" >
-                <form class="col login-form" method="POST" action="" >
+                <form class="col login-form" onSubmit={handleSubmit}>
                     <div class="input-field col">
                         <label for="title">Title: </label><br />
-                        <input id="new_post" type="text" class="validate" name="title" />
+                        <input id="new_post" type="text" class="validate" name="title" onChange={(e) => setEditPost({...editPost, title : e.target.value})} value={editPost.title}/>
                     </div>
                     <div class="input-field col">
                         <label for="firsts">Entry:</label><br />
-                        <textarea id="blog_rntry" type="text" class="validate" name="entry" />
+                        <textarea id="blog_rntry" type="text" class="validate" name="body" onChange={(e) => setEditPost({...editPost, body: e.target.value})} value={editPost.body}/>
                     </div>
-                    {/* <div class="input-field col">
-                        <label for="img">Post image url:</label>
-                        <input id="baby_post_img" type="text" class="validate" name="img" />
-                    </div> */}
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                        <i class="material-icons right"></i>
-                    </button>
+                    <Button variant="primary" onClick={handleSubmit}>Submit</Button>
                 </form>
             </section>
         </div>

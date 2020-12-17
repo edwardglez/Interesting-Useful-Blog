@@ -21,10 +21,20 @@ export default class posts {
             credentials: "include",
             body: JSON.stringify(data),
         }
-        )
+        ).then(res => res.json())
     }
-    static update = (id) => {
-        return fetch(`${url}/posts/${id}`).then(res => res.json())
+    static update = (post) => {
+        const userId = localStorage.getItem('id')
+        console.log(userId)
+        return fetch(`${url}/posts/${userId}/${post.id}`, {
+            method: "PUT",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            credentials: "include",
+            body: JSON.stringify(post),
+        }
+        ).then(res => res.json())
     }
 
     static delete = (id) => {
